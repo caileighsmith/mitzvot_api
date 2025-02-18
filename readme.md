@@ -44,6 +44,12 @@ Resulting in a coverage report, looking like:
 
 # Documentation:
 
+## Usage
+
+- 100 requests per hour for non AI endpoints.
+- 20 requests per hour for AI endpoints.
+- Usage is IP-based.
+
 ## API Endpoints
 
 ### Get All Mitzvot
