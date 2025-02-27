@@ -4,7 +4,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "npx jest"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
