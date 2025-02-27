@@ -33,6 +33,8 @@ The server will start on port 3000.
 
 ### Testing
 
+(THIS IS A TEST FOR CI, )
+
 Generate a unit test report:
 
     npx jest
