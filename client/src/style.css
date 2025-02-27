@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.resources, .api-calls {
+    margin-bottom: 20px;
+}
+
+.resource, .api-data, .api-search-data, .api-post-data, .api-explain-data {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.resource h2, .api-data h2, .api-search-data h2, .api-post-data h2, .api-explain-data h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.resource p, .api-data p, .api-search-data p, .api-post-data p, .api-explain-data p {
+    margin: 0 0 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
