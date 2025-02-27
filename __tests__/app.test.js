@@ -16,7 +16,7 @@ describe('API Endpoints', () => {
     it('GET /api/mitzvot/ai/search should return AI search results', async () => {
         const response = await request(server).get('/api/mitzvot/ai/search?q=test');
         expect(response.status).toBe(200);
-        expect(response.body).toBeInstanceOf(Object);
+        await expect(response.body).toBeInstanceOf(Object);
     });
 
     it('GET /api/mitzvot/ai/search should return status 400 if no query is provided', async () => {
