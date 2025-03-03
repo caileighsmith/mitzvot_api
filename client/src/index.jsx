@@ -6,29 +6,7 @@ import './style.css';
 export function App() {
     return (
         <div class="app">
-            <header>
-                <a href="https://preactjs.com" target="_blank">
-                    <img src={preactLogo} alt="Preact logo" height="160" width="160" />
-                </a>
-                <h1>Get Started building Vite-powered Preact Apps</h1>
-            </header>
-            <section class="resources">
-                <Resource
-                    title="Learn Preact"
-                    description="If you're new to Preact, try the interactive tutorial to learn important concepts"
-                    href="https://preactjs.com/tutorial"
-                />
-                <Resource
-                    title="Differences to React"
-                    description="If you're coming from React, you may want to check out our docs to see where Preact differs"
-                    href="https://preactjs.com/guide/v10/differences-to-react"
-                />
-                <Resource
-                    title="Learn Vite"
-                    description="To learn more about Vite and how you can customize it to fit your needs, take a look at their excellent documentation"
-                    href="https://vitejs.dev"
-                />
-            </section>
+        
             <section class="api-calls">
                 <ApiData endpoint="/api/tanakh/random" title="Random Tanakh Section" />
                 <ApiData endpoint="/api/tanakh/random/english" title="Random Tanakh Section (English)" />
@@ -66,6 +44,8 @@ function ApiData({ endpoint, title }) {
         <div class="api-data">
             <h2>{title}</h2>
             <button onClick={fetchData}>Fetch Data</button>
+            <br />
+            <br />
             {data ? (
                 <pre>{JSON.stringify(data, null, 2)}</pre>
             ) : (
